@@ -9,10 +9,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     TextView Sauce;
+    Button btnViewNote;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
         });
         Sauce = (TextView) findViewById(R.id.Sauce);
         Sauce.setText("The quick brown fox jumped over the lazy dogs.");
+
+        btnViewNote = findViewById(R.id.btnViewNote);
+        btnViewNote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getBaseContext(), ViewNote.class));
+            }
+        });
 
     }
 

@@ -25,7 +25,8 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/colorWhite">
     <EditText
         android:id="@+id/etTitle"
         android:layout_width="match_parent"
@@ -40,7 +41,8 @@
         android:hint="Note..."
         android:lines="7"
         android:gravity="top"
-        android:layout_margin="3dp"/>
+        android:layout_margin="3dp"
+        android:background="@drawable/bg_edittext_pink"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,7 +51,10 @@
         android:id="@+id/btnAddPhoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Photo"/>
+        android:text="Add Photo"
+        android:background="@color/colorWhite"
+        android:drawableLeft="@drawable/ic_add_a_photo_pink_600_24dp"
+        android:drawablePadding="8dp"/>
 
     <View
         android:layout_width="0dp"
@@ -60,7 +65,10 @@
         android:id="@+id/btnAddVoiceNote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Voice Note"/>
+        android:text="Add Voice Note"
+        android:background="@color/colorWhite"
+        android:drawableLeft="@drawable/ic_mic_pink_600_24dp"
+        android:drawablePadding="8dp"/>
     </LinearLayout>
     <Button
         android:id="@+id/btnSave"
@@ -68,13 +76,15 @@
         android:layout_height="wrap_content"
         android:text="SAVE"
         android:textColor="@color/colorWhite"
-        android:background="@color/colorAccent"
+        android:background="@drawable/bg_button_save"
         android:layout_marginTop="10dp"/>
 
-    <ImageView
+
+
+    <!--<ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/waterlily"/>
+        android:src="@drawable/waterlily"/>-->
 </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

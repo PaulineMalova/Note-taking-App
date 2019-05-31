@@ -3,4 +3,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_add_note">AddNoteActivity</string>
     <string name="title_activity_trial">TrialActivity</string>
+    <string name="title_activity_view_note">ViewNote</string>
+    <string name="view_note_text_view_two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi corporis, deserunt eligendi excepturi, libero nostrum perferendis provident quaerat temporibus, ullam velit voluptate. Ex excepturi illo nisi obcaecati sapiente unde voluptates?</string>
 </resources>

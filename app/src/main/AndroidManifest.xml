@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".TrialActivity"
-            android:label="@string/title_activity_trial"
+            android:name=".ViewNote"
+            android:label="@string/title_activity_view_note"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
