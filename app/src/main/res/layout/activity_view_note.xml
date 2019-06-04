@@ -33,7 +33,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="230dp"
                 android:layout_marginBottom="10dp">
 
                 <ImageView
@@ -41,14 +41,16 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/computeruse"
                     android:scaleType="fitXY"
-                    android:alpha="1"
+                    android:alpha="0.8"
                     android:layout_alignParentRight="false"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Tempor incididunt ut labore"
                     android:textColor="@color/colorWhite"
-                    android:textSize="21dp" />
+                    android:textSize="21dp"
+                    android:background="@color/colorBlack"
+                    android:alpha="0.85" />
 
             </RelativeLayout>
 

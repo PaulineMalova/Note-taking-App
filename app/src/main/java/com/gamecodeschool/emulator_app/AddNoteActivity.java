@@ -12,6 +12,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.gamecodeschool.database.DatabaseHelper;
+import com.gamecodeschool.database.Note;
+
 public class AddNoteActivity extends AppCompatActivity {
     EditText etTitle;
     EditText etNote;
@@ -19,7 +22,7 @@ public class AddNoteActivity extends AppCompatActivity {
     Button btnAddVoiceNote;
     Button btnSave;
     String title;
-    String note;
+    String noteText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,12 +43,21 @@ public class AddNoteActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 title = etTitle.getText().toString();
-                note = etNote.getText().toString();
-                Log.d("editText", title);
-                Log.d("editText", note);
+                noteText = etNote.getText().toString();
+                /*Log.d("editText", title);
+                Log.d("editText", noteText);*/
+
+                Note note = new Note(title, noteText);
+
+                DatabaseHelper databaseHelper = new DatabaseHelper(getBaseContext(), "notes", null, 1);
+                //long insert = databaseHelper.insertNote(note);
+                long insert = databaseHelper.insertNote(note);
+                Log.d("insertNote", "Note insertion value:" + insert);
+
                 Toast.makeText(getBaseContext(), "Saving...", Toast.LENGTH_LONG).show();
             }
         });
+
 
 
 

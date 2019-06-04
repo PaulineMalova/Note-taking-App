@@ -38,7 +38,7 @@
         android:id="@+id/etNote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Note..."
+        android:hint="Note Text..."
         android:lines="7"
         android:gravity="top"
         android:layout_margin="3dp"
