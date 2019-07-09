@@ -17,7 +17,7 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:title="View Note" />
+            app:title="NOTES" />
 
     </android.support.design.widget.AppBarLayout>
 
@@ -26,33 +26,23 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <Button
-            android:id="@+id/btnViewNote"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="VIEW NOTE"
-            android:textAllCaps="true"
-            android:layout_margin="20dp"
-            android:padding="10dp"
-            android:background="@color/colorAccent"
-            android:textColor="@color/colorWhite"
-            android:textSize="17dp"/>
+        <!--<Button-->
+            <!--android:id="@+id/btnViewNote"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="VIEW NOTE"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:layout_margin="20dp"-->
+            <!--android:padding="10dp"-->
+            <!--android:background="@color/colorAccent"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textSize="17dp"/>-->
 
-        <TextView
-            android:id="@+id/Sauce"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="Love Lace Lab"
-            />
-        <TextView
-            android:id="@+id/Source"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="Mobile Development Class"
-            android:layout_above="@+id/Sauce"
-            />
+        <ListView
+            android:id="@+id/lvclassmates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
     </RelativeLayout>
 
 
