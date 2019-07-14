@@ -25,6 +25,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
     }
 
     public long insertNote(Note note) {
@@ -79,6 +83,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         sqLiteDatabase.close();
     }
 
+<<<<<<< HEAD
     public int updateNote(Note note) {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -90,4 +95,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         //updating a note into the database.
     }
 
+=======
+>>>>>>> origin/master
 }

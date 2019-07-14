@@ -11,6 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+<<<<<<< HEAD
             android:name=".EditNoteActivity"
             android:label="@string/title_activity_edit_note"
             android:parentActivityName=".ViewNote"
@@ -20,6 +21,8 @@
                 android:value="com.gamecodeschool.emulator_app.ViewNote" />
         </activity>
         <activity
+=======
+>>>>>>> origin/master
             android:name=".ViewNote"
             android:label="@string/title_activity_view_note"
             android:parentActivityName=".MainActivity"

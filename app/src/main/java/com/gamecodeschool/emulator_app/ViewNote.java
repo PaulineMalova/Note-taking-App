@@ -1,6 +1,9 @@
 package com.gamecodeschool.emulator_app;
 
+<<<<<<< HEAD
 import android.content.Intent;
+=======
+>>>>>>> origin/master
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -33,6 +36,7 @@ public class ViewNote extends AppCompatActivity {
         tvTitle = findViewById(R.id.tvTitle);
         tvNoteText = findViewById(R.id.tvNoteText);
         btnEdit = findViewById(R.id.btnEdit);
+<<<<<<< HEAD
 
         getNoteId();
 
@@ -46,6 +50,8 @@ public class ViewNote extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+=======
+>>>>>>> origin/master
         btnDelete = findViewById(R.id.btnDelete);
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,8 +62,13 @@ public class ViewNote extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
 
 
+=======
+        getNoteId();
+        displayNote();
+>>>>>>> origin/master
     }
 
     private void getNoteId() {
@@ -74,9 +85,12 @@ public class ViewNote extends AppCompatActivity {
         tvNoteText.setText(note.getNoteText());
     }
 
+<<<<<<< HEAD
     @Override
     protected void onResume() {
         super.onResume();
         displayNote();
     }
+=======
+>>>>>>> origin/master
 }
