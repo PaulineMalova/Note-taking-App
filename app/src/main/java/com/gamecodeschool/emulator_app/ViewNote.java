@@ -1,5 +1,6 @@
 package com.gamecodeschool.emulator_app;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -32,6 +33,19 @@ public class ViewNote extends AppCompatActivity {
         tvTitle = findViewById(R.id.tvTitle);
         tvNoteText = findViewById(R.id.tvNoteText);
         btnEdit = findViewById(R.id.btnEdit);
+
+        getNoteId();
+
+        displayNote();
+
+        btnEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getBaseContext(), EditNoteActivity.class);
+                intent.putExtra("NOTE_ID", noteId);
+                startActivity(intent);
+            }
+        });
         btnDelete = findViewById(R.id.btnDelete);
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,8 +56,8 @@ public class ViewNote extends AppCompatActivity {
             }
         });
 
-        getNoteId();
-        displayNote();
+
+
     }
 
     private void getNoteId() {
@@ -60,4 +74,9 @@ public class ViewNote extends AppCompatActivity {
         tvNoteText.setText(note.getNoteText());
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        displayNote();
+    }
 }

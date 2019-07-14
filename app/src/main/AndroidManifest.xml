@@ -10,7 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EditNoteActivity" />
+        <activity
+            android:name=".EditNoteActivity"
+            android:label="@string/title_activity_edit_note"
+            android:parentActivityName=".ViewNote"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gamecodeschool.emulator_app.ViewNote" />
+        </activity>
         <activity
             android:name=".ViewNote"
             android:label="@string/title_activity_view_note"

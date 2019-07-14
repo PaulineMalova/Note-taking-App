@@ -79,13 +79,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         sqLiteDatabase.close();
     }
 
-    public int updatetNote(Note note) {
+    public int updateNote(Note note) {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put("title", note.getTitle());
-//        contentValues.put("noteText",note.getNoteText());
-        return sqLiteDatabase.update("note",contentValues,"id"+"=?",
-         new String[]{String.valueOf(note.getId())});
+        contentValues.put("noteText",note.getNoteText());
+        return sqLiteDatabase.update("notes",contentValues,"id =?",
+                new String[]{String.valueOf(note.getId())});
 
         //updating a note into the database.
     }
